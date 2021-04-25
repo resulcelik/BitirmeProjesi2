@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "844087714547",
+    "project_id": "neredesinsen-b92e7",
+    "storage_bucket": "neredesinsen-b92e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844087714547:android:bdadcf10d68d043ed24d86",
+        "android_client_info": {
+          "package_name": "com.example.neredesinsen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844087714547-t3890dhdenljk6ku8nndsn9jnp2a66r7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.neredesinsen",
+            "certificate_hash": "d20a3a34673c0c2953236115c34871a27744e3b9"
+          }
+        },
+        {
+          "client_id": "844087714547-gr3tm4p306ee73lk7qr1ia2frq2prf8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYZCeWPqMad2iJsHqZPdojSncSLN1Geok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844087714547-gr3tm4p306ee73lk7qr1ia2frq2prf8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
