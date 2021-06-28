@@ -67,7 +67,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:background="@drawable/button_btn"
-                android:onClick="signin"
                 android:text="Giriş Yap" />
 
             <Button
@@ -76,7 +75,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:background="@drawable/button_btn"
-                android:onClick="signup"
                 android:text="Kayıt Ol" />
 
         </LinearLayout>

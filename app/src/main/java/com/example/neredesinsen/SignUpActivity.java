@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -16,10 +17,11 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class SignUpActivity extends AppCompatActivity {
+public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
 
     private FirebaseAuth firebaseAuth;
     EditText emailText, passText;
+    Button signUp, signIn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,11 @@ public class SignUpActivity extends AppCompatActivity {
 
         emailText = findViewById(R.id.email_text_id);
         passText = findViewById(R.id.pass_text_id);
+        signUp = findViewById(R.id.singup_id);
+        signIn = findViewById(R.id.singin_id);
+
+        signUp.setOnClickListener(this);
+        signIn.setOnClickListener(this);
 
         FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
         // mevcut kullanıcı varsa giriş sayfasında bekletme içeri al
@@ -90,4 +97,16 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onClick(View v) {
+
+        switch (v.getId())
+        {
+            case R.id.singup_id:
+                signup(v);
+                break;
+            case R.id.singin_id:
+                signin(v);
+        }
+    }
 }
